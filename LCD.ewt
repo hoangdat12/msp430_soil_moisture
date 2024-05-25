@@ -2175,9 +2175,21 @@
         <name>$PROJ_DIR$\main.c</name>
     </file>
     <file>
+        <name>$PROJ_DIR$\reley.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\reley.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\..\..\21.LCD16x02 and 74HC595 and do am dat\code\sensor.c</name>
     </file>
     <file>
         <name>$PROJ_DIR$\..\..\21.LCD16x02 and 74HC595 and do am dat\code\sensor.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\switches.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\switches.h</name>
     </file>
 </project>
