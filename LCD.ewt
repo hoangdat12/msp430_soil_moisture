@@ -2172,6 +2172,12 @@
         <name>$PROJ_DIR$\i2c_lcd.h</name>
     </file>
     <file>
+        <name>$PROJ_DIR$\led.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\led.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\main.c</name>
     </file>
     <file>
@@ -2181,10 +2187,10 @@
         <name>$PROJ_DIR$\reley.h</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\..\..\21.LCD16x02 and 74HC595 and do am dat\code\sensor.c</name>
+        <name>$PROJ_DIR$\sensor.c</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\..\..\21.LCD16x02 and 74HC595 and do am dat\code\sensor.h</name>
+        <name>$PROJ_DIR$\sensor.h</name>
     </file>
     <file>
         <name>$PROJ_DIR$\switches.c</name>

@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "C:\Users\ACER\Downloads\YTB-main\YTB-main\MSP430\16.LCD16x02 and i2c\LCD I2C\settings\LCD.Debug.general.xcl" --backend -f "C:\Users\ACER\Downloads\YTB-main\YTB-main\MSP430\16.LCD16x02 and i2c\LCD I2C\settings\LCD.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "C:\Users\nvt05\Documents\Zalo Received Files\LCD I2C\LCD I2C\settings\LCD.Debug.general.xcl" --backend -f "C:\Users\nvt05\Documents\Zalo Received Files\LCD I2C\LCD I2C\settings\LCD.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "C:\Users\ACER\Downloads\YTB-main\YTB-main\MSP430\16.LCD16x02 and i2c\LCD I2C\settings\LCD.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\ACER\Downloads\YTB-main\YTB-main\MSP430\16.LCD16x02 and i2c\LCD I2C\settings\LCD.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "C:\Users\nvt05\Documents\Zalo Received Files\LCD I2C\LCD I2C\settings\LCD.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\nvt05\Documents\Zalo Received Files\LCD I2C\LCD I2C\settings\LCD.Debug.driver.xcl" 
 
 @echo off 
 :end

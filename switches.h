@@ -14,10 +14,4 @@ void handle_click_sw_decrease_stop(bool IS_AUTOMATE, int *MOISTURE_THRESHOLD, in
 // Function to handle changing the mode (automate/manual)
 void handle_change_mode(bool *IS_AUTOMATE, int *IS_ENABLE_MANUAL);
 
-// Function to handle automating water based on moisture levels
-void handle_automate_water(int SOIL_MOISTURE, int MOISTURE_THRESHOLD);
-
-// Function to handle manual water mode
-void handle_manual_water(int IS_ENABLE_MANUAL);
-
 

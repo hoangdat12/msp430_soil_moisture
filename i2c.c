@@ -2,23 +2,24 @@
 
 void I2C_USCI_Init(uint8_t slaveAddress)
 {
+    // Cau hinh P1.6 va P1.7
     P1SEL |= BIT6 | BIT7;
     P1SEL2 |= BIT6 | BIT7;
     
-    UCB0CTL1 |= UCSWRST;
-    UCB0CTL0 = UCMST | UCMODE_3 | UCSYNC;
-    UCB0CTL1 = UCSSEL_2 | UCSWRST;
-    UCB0BR0 = 12;
-    UCB0BR1 = 0;
-    UCB0I2CSA = slaveAddress;
-    UCB0CTL1 &= ~UCSWRST;
+    UCB0CTL1 |= UCSWRST; // Set I2C in reset mode
+    UCB0CTL0 = UCMST | UCMODE_3 | UCSYNC; 
+    UCB0CTL1 = UCSSEL_2 | UCSWRST; // Select SMCLK as clock source and keep in reset
+    UCB0BR0 = 12; // Set low byte of baud rate
+    UCB0BR1 = 0;  // Set high byte of baud rate
+    UCB0I2CSA = slaveAddress; // Set slave address
+    UCB0CTL1 &= ~UCSWRST; // Exit reset mode to start operation
 }
 
 void I2C_USCI_Set_Address(uint8_t slaveAddress)
 {
-    UCB0CTL1 |= UCSWRST;
-    UCB0I2CSA = slaveAddress;
-    UCB0CTL1 &= ~UCSWRST;
+    UCB0CTL1 |= UCSWRST; // Set USCI in reset mode to change address
+    UCB0I2CSA = slaveAddress; // Set new slave address
+    UCB0CTL1 &= ~UCSWRST; // Exit reset mode to start operation
 }
 
 uint8_t I2C_USCI_Write_Byte(uint8_t slaveAddress, uint8_t value)
